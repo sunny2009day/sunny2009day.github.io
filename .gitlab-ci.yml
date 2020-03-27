@@ -1,0 +1,13 @@
+image: node:10.11.1
+
+pages:
+ cache:
+   paths:
+   - node_modules/
+ script:
+ - bash ./deploy.sh
+ artifacts:
+   paths:
+   - public
+ only:
+ - master
