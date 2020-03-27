@@ -35,4 +35,11 @@ plugins: [
 - 直接运行
 
 ## 缺点
-- 源码和build之后需要两个仓库或分支了,目前之提交了build之后的,网上说的创建两个分支,感觉
+- 源码和build之后需要两个仓库或分支了
+- 回到项目根目录,初始化git,添加remote为githubPage仓库的remote,新建分支`src`,提交
+- `git init`
+- `git remote add origin <ssh的仓库地址>`
+- `git checkout -b <本地分支> origin/<远程分支>`
+- 线上没有分支,可以先设置推送流,push自动会建立分支,gitBash会有提示
+
+*以后每次更改,需要提交一下src分支,在deploy一下*
