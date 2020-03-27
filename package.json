@@ -1,0 +1,40 @@
+{
+  "name": "systemlearning",
+  "version": "1.0.0",
+  "description": "A jekyll theme, simple and clear, compatible with PC iPad and Phone (RWD)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/vuepress dev docs",
+    "serve": "npm run dev",
+    "deploy": "bash deploy.sh",
+    "build": "./node_modules/.bin/vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunny2009day/sunny2009day.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sunny2009day/sunny2009day.github.io/issues"
+  },
+  "homepage": "https://github.com/sunny2009day/sunny2009day.github.io#readme",
+  "devDependencies": {
+    "vuepress": "^1.4.0"
+  },
+  "dependencies": {
+    "@vuepress/plugin-back-to-top": "^1.1.0",
+    "@vuepress/theme-vue": "^1.4.0",
+    "busuanzi.pure.js": "^1.0.2",
+    "commander": "^2.20.0",
+    "esm": "^3.2.25",
+    "highlight.js": "^9.15.10",
+    "vuepress": "^1.0.0",
+    "vuepress-plugin-gotop-plus": "^1.0.0",
+    "vuepress-plugin-helper-live2d": "^1.0.0",
+    "vuepress-plugin-medium-zoom": "^1.1.2",
+    "vuepress-plugin-mygitalk": "^1.0.4",
+    "vuepress-plugin-sitemap": "^2.1.2",
+    "vuepress-theme-yilia-plus": "^1.0.0"
+  }
+}
