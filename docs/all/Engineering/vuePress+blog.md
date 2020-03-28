@@ -22,6 +22,9 @@ plugins: [
 ```
 具体参考插件说明
 
+## 使用gitTalk,实现评论功能
+- 主要是用了插件
+
 ## 主要是部署
 - 整个项目的源码是md的需要,vuePress会生成html的静态文件githubPage才能识别
 - 在GitHub创建一个 以GitHub用户名开头以github.io结尾的库,*不要初始化库*。

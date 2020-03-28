@@ -150,7 +150,7 @@ async function getSidebar(groupA, introductionA) {
 module.exports = async function(){
   return {
     title: "挣扎的咸鱼",
-    base: '/sunny2009day.github.io/',
+    base: '/',
     description: "自己做自己的大神吧",
     theme: 'vuepress-theme-yilia-plus',
     plugins: [

@@ -3,6 +3,7 @@ home: true
 heroImage: /asset/img/header.png
 actionText: 快速了解 →
 actionLink: /about/
+ico: /favicon.ico/
 features:
 - title: 个人介绍
   details: web前端
