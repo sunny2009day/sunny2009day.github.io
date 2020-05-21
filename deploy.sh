@@ -11,7 +11,7 @@ cd docs/.vuepress/dist
 
 git init
 git add -A
-git commit -m 'deploy'
+git commit -m 'deploy: 发布'
 
 # 发布到 https://<USERNAME>.github.io
 # 强制推送,会删除提交记录
