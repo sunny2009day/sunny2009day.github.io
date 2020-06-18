@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>javascript的syntax基础1 | 挣扎的咸鱼</title>
+    <meta name="description" content="自己做自己的大神吧">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.c1aa5349.css" as="style"><link rel="preload" href="/assets/js/app.e473c4b1.js" as="script"><link rel="preload" href="/assets/js/2.a1a30593.js" as="script"><link rel="preload" href="/assets/js/36.869de2d9.js" as="script"><link rel="prefetch" href="/assets/js/10.3a909b5a.js"><link rel="prefetch" href="/assets/js/11.c9bfe952.js"><link rel="prefetch" href="/assets/js/12.d4753f53.js"><link rel="prefetch" href="/assets/js/13.f9782e6c.js"><link rel="prefetch" href="/assets/js/14.c38d7476.js"><link rel="prefetch" href="/assets/js/15.f7787999.js"><link rel="prefetch" href="/assets/js/16.9c8e63b8.js"><link rel="prefetch" href="/assets/js/17.48751c8e.js"><link rel="prefetch" href="/assets/js/18.44e148aa.js"><link rel="prefetch" href="/assets/js/19.164a73ac.js"><link rel="prefetch" href="/assets/js/20.fcfa3924.js"><link rel="prefetch" href="/assets/js/21.32550108.js"><link rel="prefetch" href="/assets/js/22.b5275d7b.js"><link rel="prefetch" href="/assets/js/23.caf4ab7b.js"><link rel="prefetch" href="/assets/js/24.8b4d1f81.js"><link rel="prefetch" href="/assets/js/25.b54b0543.js"><link rel="prefetch" href="/assets/js/26.53d5d2e7.js"><link rel="prefetch" href="/assets/js/27.7d1c7d50.js"><link rel="prefetch" href="/assets/js/28.f44f48ba.js"><link rel="prefetch" href="/assets/js/29.8aa4ff21.js"><link rel="prefetch" href="/assets/js/3.c8efe87c.js"><link rel="prefetch" href="/assets/js/30.ad48c56e.js"><link rel="prefetch" href="/assets/js/31.cdd2589a.js"><link rel="prefetch" href="/assets/js/32.2e319305.js"><link rel="prefetch" href="/assets/js/33.3a08d308.js"><link rel="prefetch" href="/assets/js/34.a7596d5b.js"><link rel="prefetch" href="/assets/js/35.00605a5b.js"><link rel="prefetch" href="/assets/js/37.0a7c89da.js"><link rel="prefetch" href="/assets/js/38.7643e598.js"><link rel="prefetch" href="/assets/js/39.65adb31c.js"><link rel="prefetch" href="/assets/js/4.14d6f920.js"><link rel="prefetch" href="/assets/js/40.67d6550c.js"><link rel="prefetch" href="/assets/js/41.1ede1cee.js"><link rel="prefetch" href="/assets/js/42.1068c659.js"><link rel="prefetch" href="/assets/js/43.c6f41cb7.js"><link rel="prefetch" href="/assets/js/44.27b3f928.js"><link rel="prefetch" href="/assets/js/45.d60e451b.js"><link rel="prefetch" href="/assets/js/46.372cf32a.js"><link rel="prefetch" href="/assets/js/47.2b001df9.js"><link rel="prefetch" href="/assets/js/48.b9f35f1f.js"><link rel="prefetch" href="/assets/js/49.4156fdf8.js"><link rel="prefetch" href="/assets/js/5.f60c3c65.js"><link rel="prefetch" href="/assets/js/50.fd4630cd.js"><link rel="prefetch" href="/assets/js/51.c61579ed.js"><link rel="prefetch" href="/assets/js/52.3bed06b1.js"><link rel="prefetch" href="/assets/js/53.848280b1.js"><link rel="prefetch" href="/assets/js/54.f38d6843.js"><link rel="prefetch" href="/assets/js/55.ed1741d4.js"><link rel="prefetch" href="/assets/js/56.23414552.js"><link rel="prefetch" href="/assets/js/57.9b0abd09.js"><link rel="prefetch" href="/assets/js/58.28d54d7a.js"><link rel="prefetch" href="/assets/js/59.ab120788.js"><link rel="prefetch" href="/assets/js/6.da3ad6c3.js"><link rel="prefetch" href="/assets/js/60.f624171c.js"><link rel="prefetch" href="/assets/js/61.bdd3be63.js"><link rel="prefetch" href="/assets/js/62.af914b81.js"><link rel="prefetch" href="/assets/js/63.4ed4c8e3.js"><link rel="prefetch" href="/assets/js/64.06e98283.js"><link rel="prefetch" href="/assets/js/65.316fc7ed.js"><link rel="prefetch" href="/assets/js/66.20c94f01.js"><link rel="prefetch" href="/assets/js/7.c4819eb6.js"><link rel="prefetch" href="/assets/js/8.2d31cd82.js"><link rel="prefetch" href="/assets/js/9.8ea3bdfa.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.c1aa5349.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><main><main slot="sidebar-top"><a href="https://sunny2009day.github.io/" aria-label="View source on GitHub" target="_blank" class="github-corner"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path> <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" class="octo-arm" style="transform-origin: 130px 106px;"></path> <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a></main> <div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">挣扎的咸鱼</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/all/" class="nav-link router-link-active">
+  all
+</a></div><div class="nav-item"><a href="/js/" class="nav-link">
+  js
+</a></div><div class="nav-item"><a href="/css/" class="nav-link">
+  css
+</a></div><div class="nav-item"><a href="/Interview/" class="nav-link">
+  Interview
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/all/" class="nav-link router-link-active">
+  all
+</a></div><div class="nav-item"><a href="/js/" class="nav-link">
+  js
+</a></div><div class="nav-item"><a href="/css/" class="nav-link">
+  css
+</a></div><div class="nav-item"><a href="/Interview/" class="nav-link">
+  Interview
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Engineering</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/all/Engineering/mongo+react+graphql.html" class="sidebar-link">mongo+react+graphql微服务初接触</a></li><li><a href="/all/Engineering/npm-build-private.html" class="sidebar-link">npm 搭建私有仓库</a></li><li><a href="/all/Engineering/vuePress+blog.html" class="sidebar-link">vuePress 搭建博客并部署到github</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>algorithm</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/all/algorithm/algorithm.html" class="sidebar-link">记录一些算法</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>blog</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/all/blog/2019-09-05-VMware.html" class="sidebar-link">VMware虚拟机黑屏解决</a></li><li><a href="/all/blog/2019-10-01-antDesgin.html" class="sidebar-link">ant-design源码执行的相关分析,方便以后参照修改</a></li><li><a href="/all/blog/2019-10-20-spider.html" class="sidebar-link">网络爬虫,原理和预防</a></li><li><a href="/all/blog/2019-10-21-promise.html" class="sidebar-link">对于旧得项目可以用promise封装</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>devOps</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/all/devOps/2020-01-05-gitlabCi.html" class="sidebar-link">gitLab-ci得简单总结</a></li><li><a href="/all/devOps/2020-01-05-openCmd.html" class="sidebar-link">打开cmd窗口的快捷方式</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>html</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/all/html/2019-11-06-document.html" class="sidebar-link">html界面相关</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>httpRequest</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/all/httpRequest/2019-10-20-spider.html" class="sidebar-link">网络爬虫,原理和预防</a></li><li><a href="/all/httpRequest/2019-10-27-simpleReq.html" class="sidebar-link">简单请求和非简单请求</a></li><li><a href="/all/httpRequest/2019-11-06-webApi.html" class="sidebar-link">工作中遇到的webapi相关</a></li><li><a href="/all/httpRequest/2019-11-09-http2.html" class="sidebar-link">http2</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>javascript</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/all/javascript/2018-11-15-Object.html" class="sidebar-link">object创建的方法对比!</a></li><li><a href="/all/javascript/2018-11-17-callAndapplay.html" class="sidebar-link">call和applay</a></li><li><a href="/all/javascript/2018-11-18-setTimeout.html" class="sidebar-link">setTimeout执行机制</a></li><li><a href="/all/javascript/2018-11-19-getAndPost.html" class="sidebar-link">get和post的区别</a></li><li><a href="/all/javascript/2018-11-20-Currying.html" class="sidebar-link">函数柯理化Currying</a></li><li><a href="/all/javascript/2018-11-21-Module.html" class="sidebar-link">javascript模块化</a></li><li><a href="/all/javascript/2018-12-10-syntaxBase.html" class="active sidebar-link">javascript的syntax基础1</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/all/javascript/2018-12-10-syntaxBase.html#好记性不如烂笔头" class="sidebar-link">好记性不如烂笔头</a></li></ul></li><li><a href="/all/javascript/2018-12-11-syntaxBase2.html" class="sidebar-link">javascript的syntax基础2</a></li><li><a href="/all/javascript/2019-10-28-arrayFlat.html" class="sidebar-link">数组扁平化</a></li><li><a href="/all/javascript/2019-12-08-jsDOM.html" class="sidebar-link">window 的相关api记录</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>module</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/all/module/2018-11-21-Module.html" class="sidebar-link">组件化打包知识点</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>nginxRef</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/all/nginxRef/2019-11-06-nginxproxy.html" class="sidebar-link">nginx反向代理</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>nodejs</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/all/nodejs/2019-10-17-nodeEvnQuestion.html" class="sidebar-link">nodejs环境相关遇到的问题</a></li><li><a href="/all/nodejs/2019-11-29-template.html" class="sidebar-link">nodejs中的template相关</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>note</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/all/note/2018-11-18-setTimeout.html" class="sidebar-link">笔记</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>plugins</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/all/plugins/2018-11-20-vue.html" class="sidebar-link">Vue知识记录</a></li><li><a href="/all/plugins/2019-01-14-miscellany.html" class="sidebar-link">前端组件库杂记</a></li><li><a href="/all/plugins/2020-04-17-vue.html" class="sidebar-link">Vue3.0知识记录</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>wechat</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/all/wechat/2018-11-20-wechat.html" class="sidebar-link">微信小程序介绍</a></li><li><a href="/all/wechat/2019-11-21-wechataActualCombat.html" class="sidebar-link">微信小程序实战问题总结</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>work</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/all/work/2018-12-10-hsoa.html" class="sidebar-link">工作中hsoa的记录</a></li><li><a href="/all/work/2019-01-15-webhook.html" class="sidebar-link">工作中遇到的浏览器兼容问题</a></li><li><a href="/all/work/2019-07-21-gitCommand.html" class="sidebar-link">git command 命令记录</a></li><li><a href="/all/work/2019-09-01-charts.html" class="sidebar-link">关于可视化图表</a></li><li><a href="/all/work/2019-09-06-syberosHybrid.html" class="sidebar-link">三部的,要学习</a></li><li><a href="/all/work/2019-11-06-nginxproxy.html" class="sidebar-link">nginx反向代理</a></li><li><a href="/all/work/2020-03-27-workRecode.html" class="sidebar-link">浏览器兼容问题</a></li><li><a href="/all/work/2020-05-07-puppeteer.html" class="sidebar-link">puppeteer初步使用遇到的问题</a></li><li><a href="/all/work/2020-05-22-vueProject.html" class="sidebar-link">关于vue项目开发遇到问题</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="好记性不如烂笔头"><a href="#好记性不如烂笔头" class="header-anchor">#</a> 好记性不如烂笔头</h2> <blockquote><p>js 执行</p></blockquote> <div class="language-c extra-class"><pre class="language-c"><code><span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+   <span class="token comment">/* 
+    1. 编译 -出现错误(3)
+    2. 执行 -出现错误(3)
+    3. 判断是否有下一个代码段 -是(1) -否(结束)
+    */</span>
+    <span class="token comment">//编译错误和运行错误出错时，各自受各自的影响</span>
+    <span class="token function">alert</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    var frist <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+    function <span class="token function">display</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&quot;hello&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+    <span class="token function">alert</span><span class="token punctuation">(</span>frist<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//undefine</span>
+    <span class="token function">display</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//alert(&quot;hello&quot;)</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+
+</code></pre></div><blockquote><p>数组，属于对象引用类型
+[]
+new Array(1,2,3);
+new Array(3); //创建一个数组长度为3
+decodeURIComponent解码URL地址可以解空格</p></blockquote> <blockquote><p>函数或方法由那个Object调用起来，函数内部this便指向谁,对象绑定事件，事件内的this便指向该对象
+对象,以下为动态绑定<code>A.onclick = a; function a() {//this为对象A}</code></p></blockquote> <blockquote><p>监听事件attachEvent(事件名,callback)适用于IE浏览器,
+W3C浏览器,事件名没有&quot;on&quot;前缀,addEventListener(事件名, callback, 事件模型(true:捕获,false:冒泡))
+无论IE或 W3C,默认冒泡false，IE不支持捕获;
+IE8及以下,先绑定后触发；W3C先绑定先触发;
+事件模型
+DOM元素层级，body-div1-div2(click)
+1.冒泡，从里向外,触发顺序div2-div1-body,上升至最顶级元素;
+<code>window.event.cancelBubble = true;//IE中事件对象取消冒泡</code>;
+<strong>W3C,event.stopPropagation();取消冒泡</strong>
+2.捕获，从上向下, 触发顺序body-div1-div2(click),</p></blockquote> <blockquote><p>默认行为
+submit,href,等都是dom元素的默认行为;</p></blockquote> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">if</span><span class="token punctuation">(</span>window<span class="token punctuation">.</span>event<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">//IE浏览器有event事件</span>
+  window<span class="token punctuation">.</span>event<span class="token punctuation">.</span>returnValue <span class="token operator">=</span> false<span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+  evt<span class="token punctuation">.</span><span class="token function">prevenDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>BOM模型，浏览器打开一个网页程序时，js会自动创建对象，首先会创建window,然后再为window创建它的子级对象，
+形成一个树状的模型;
+window对象是所有对象的顶级对象;
+创建的所有全局对象和全局函数都是存储在window对象下的;
+面向对象</p></blockquote> <ol><li>面向机器-&gt; 无法夸硬件平台结构</li> <li>面向过程-&gt; 将程序的执行分解成若干个步骤，</li> <li>面向对象-&gt; 将程序分解成若干个事物，类(代表某类事物，是抽象的)和对象(某个事物，是具体的)
+js 中的class, Function person -》person 类的同名构造函数；
+Function person 为person类的构造函数、
+var 对象 = new 类名();//开辟了新的内存空间,直接执行类的构造函数
+对象之间的赋值是按地址赋值;</li> <li>对象的名称在栈</li> <li>对象的值在堆</li></ol> <h4 id="变量放堆中，需要先在栈找名字，再在堆中找值，消耗性能"><a href="#变量放堆中，需要先在栈找名字，再在堆中找值，消耗性能" class="header-anchor">#</a> 变量放堆中，需要先在栈找名字，再在堆中找值，消耗性能</h4> <p>null,空，不占用栈或堆得空间;所以有时用变量= null;释放空间；
+delete只能删除自定义对象的属性，不能删除系统定义对象的属性；</p> <h4 id="成员方法"><a href="#成员方法" class="header-anchor">#</a> 成员方法</h4> <p>在对象声明之后的,动态添加的方法;</p> <h4 id="object是所有类的父类"><a href="#object是所有类的父类" class="header-anchor">#</a> object是所有类的父类</h4> <p>通过构造器的到的对象和使用json创建的对象的区别：</p> <ol><li>省略构造器的定义</li> <li>使用构造器简化属性的定义</li></ol> <h4 id="原型"><a href="#原型" class="header-anchor">#</a> 原型</h4> <div class="language-c extra-class"><pre class="language-c"><code>function <span class="token function">Person</span><span class="token punctuation">(</span>p_name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  this<span class="token punctuation">.</span>name <span class="token operator">=</span> p_name<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//可以为Person类下的所有对象添加属性</span>
+var p1 <span class="token operator">=</span> new <span class="token function">Person</span><span class="token punctuation">(</span><span class="token string">&quot;zhangsan&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//p1是Person类的实例化,但是不继承Person类的prototype属性;</span>
+<span class="token comment">//对象的实例有{{prototype}},即_proto_;</span>
+Object<span class="token punctuation">.</span>__proto__ <span class="token operator">==</span><span class="token operator">=</span> Person<span class="token punctuation">.</span>__proto__<span class="token punctuation">;</span><span class="token comment">//true</span>
+Person<span class="token punctuation">.</span>prototype <span class="token operator">==</span><span class="token operator">=</span> p1<span class="token punctuation">.</span>__proto__<span class="token punctuation">;</span> <span class="token comment">//true;</span>
+
+
+Person<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">30</span><span class="token punctuation">;</span> <span class="token comment">//Person.prototype.age和Person.age不同前者为实例属性，后者为静态属性</span>
+p1<span class="token punctuation">.</span>__proto__<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">40</span><span class="token punctuation">;</span> <span class="token comment">//Person.prototype.age === 40;p1.age = 40;</span>
+p1<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">50</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>p1<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//p1.age=50;</span>
+</code></pre></div><p><strong>当程序加载Person函数时，会为Person构造函数创建Person原型对象,他们是独立存在的;构造器中有一个prototype属性指向了原型对象,原型对象中有一个constructor属性指向构造器,当Person类的实例在使用一个不存在的属性时，会自动到Person构造器的原型对象中去找</strong></p> <h4 id="prototype和-proto"><a href="#prototype和-proto" class="header-anchor">#</a> prototype和__proto__</h4> <blockquote><p>_Object类_静态属性_函数闭包</p></blockquote> <ul><li>使用Object避免了对构造器的定义</li></ul> <ol><li>因为所有的类在被系统加载之后,都会创建这个类的原型对象 <code>prototype = new Object</code>;</li> <li>javascript 可以模拟一些面向对象语言中 static关键字定义的类的静态属性或方法</li></ol> <ul><li>类名 属性名</li> <li>类名 属性名 = function() {};</li></ul> <ol start="3"><li><p>'闭包',一个拥有很多变量和绑定这些变量的环境表达式,这些变量也是该表达式的一部门;</p> <ul><li>在全局中不能访问局部变量，因为作用域不同，函数执行完毕后，局部变量会被回收;</li> <li>闭包的作用</li></ul> <ol><li>访问局部变量;</li> <li>使变量所占内存不被释放;</li></ol> <div class="language-c extra-class"><pre class="language-c"><code><span class="token comment">//使用一个函数包含变量i,这样局部变量i的内存不会被回收</span>
+<span class="token comment">//i的内存不回收每次调fn2,i的值都会增加</span>
+function <span class="token function">fn1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  var i <span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">;</span>
+  function <span class="token function">fn2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span> <span class="token comment">//10</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> fn2<span class="token punctuation">;</span><span class="token comment">//返回函数fn2的首地址</span>
+<span class="token punctuation">}</span>
+var test <span class="token operator">=</span> <span class="token function">fn1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//test也指向了fn2函数的首地址</span>
+<span class="token function">test</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><strong>编程语言中指向的对象,不能被回收,内存不能被回收,勾住指向</strong></p></li></ol> <blockquote><p>私有属性
+在面向对象的思想中，有些属性不想公开可以定义为私有的，在js中可以模拟这个功能</p></blockquote> <ol><li>语法</li></ol> <div class="language-c extra-class"><pre class="language-c"><code>function <span class="token function">Person</span><span class="token punctuation">(</span>P_name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  var name <span class="token operator">=</span> p_name<span class="token punctuation">;</span> <span class="token comment">//私有属性</span>
+  this<span class="token punctuation">.</span>age<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>this永远指向的是最后调用它的对象</strong>
+2. 访问私有属性可以设置set,get方法，只有set为只写属性，只有get为只读属性
+3. 使用call,apply</p> <ul><li>使用指定的对象调用当前的函数
+Js内部的this会随着程序的运行指向不同的对象可使用call,apply改变指向</li></ul> <blockquote><p>JS模拟继承，子类拥有父类的属性和方法</p></blockquote> <ol><li>扩展Object方法</li></ol> <ul><li><code>Object.prototype.ext = function() {}</code></li></ul> <ol start="2"><li>使用call,apply方法</li></ol> <ul><li>父类构造器.call(this...);</li></ul> <ol start="3"><li>原型继承(推荐，JS默认的继承)
+子类.prototype = new 父类();</li></ol> <div class="language-c extra-class"><pre class="language-c"><code>function <span class="token function">Person</span><span class="token punctuation">(</span>p_name<span class="token punctuation">,</span>p_age<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  this<span class="token punctuation">.</span>name <span class="token operator">=</span> p_name<span class="token punctuation">;</span>
+  this<span class="token punctuation">.</span>age <span class="token operator">=</span> p_age<span class="token punctuation">;</span>
+  this<span class="token punctuation">.</span>speak <span class="token operator">=</span> <span class="token function">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>this<span class="token punctuation">.</span>name<span class="token operator">+</span>this<span class="token punctuation">.</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+function <span class="token function">Student</span><span class="token punctuation">(</span>p_no<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  this<span class="token punctuation">.</span>no<span class="token operator">=</span>p_no<span class="token punctuation">;</span>
+  this<span class="token punctuation">.</span>say <span class="token operator">=</span> <span class="token function">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>this<span class="token punctuation">.</span>no <span class="token operator">+</span> this<span class="token punctuation">.</span>name<span class="token operator">+</span>this<span class="token punctuation">.</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+Student<span class="token punctuation">.</span>prototype <span class="token operator">=</span> new <span class="token function">Person</span><span class="token punctuation">(</span><span class="token string">'wang'</span><span class="token punctuation">,</span> <span class="token number">21</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+var stu <span class="token operator">=</span> new <span class="token function">Student</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+stu<span class="token punctuation">.</span><span class="token function">speak</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+stu<span class="token punctuation">.</span><span class="token function">say</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>以上代码原理可查看
+<img src="/images/prototypeExrenr.png" alt="原型继承" title="prototypeExrenr"></p> <blockquote><p>js中的函是由对象调用起来的，全局函数是window.函数,函数中的this即指向调用它的对象</p></blockquote> <blockquote><p>正则对象</p></blockquote> <ol><li>隐式创建</li></ol> <div class="language- extra-class"><pre><code>- var 对象 = /匹配模式/匹配标志
+</code></pre></div><ol start="2"><li>直接实例化</li></ol> <div class="language- extra-class"><pre><code>- var 对象 = new RegExp(&quot;匹配模式&quot;, &quot;匹配标志&quot;);
+</code></pre></div><p><strong>区别</strong></p> <ol><li>如果使用直接实例化,那么像&quot;\d&quot;这样的字符,需要转义&quot;\d&quot;;</li></ol> <div class="language- extra-class"><pre><code>- RegExp类
+ test(str): 匹配指定的模式是否出现在字符串中
+ exec(str): 返回匹配模式的字符串
+</code></pre></div><ol start="2"><li>String类
+serach: 匹配符合模式的字符串出现的位置
+match: 以数组形式返回匹配的字符串,没有匹配到的则返回null
+replace: 使用指定的内容替换匹配模式的字符串
+split: 使用匹配模式的字符串作为分隔符对字符串进行分隔,返回数组</li> <li>子表达式</li></ol> <div class="language- extra-class"><pre><code>- 在正则表达式中,使用一对括号括起来的内容是一个子表达式;
+在正则匹配模式中，子表达式匹配到的内容会被系统捕获至系统的缓冲区中反向引用；
+捕获之后，可以在匹配模式中，使用\n(n:数字)来引用系统的第n号缓冲区内容;
+
+- 匹配多个字符后面是123,,后面的内容和前面的多个字符相同,如abc123abc;
+
+ reg = /(\w+)\d\d\d\1/gi; //\1捕获子表达式(\w+)
+  1. 查找连续的相同的四个数子，如: 1111
+  var reg = /(\d)\1\1\1/gi;或  /(\d)\1{3}/; //限定符出现3次
+  2. 查1221,3443等
+  reg = /(\d)(\d)\2\1/gi;
+  3. 查AABB,TTMM等
+  reg = /(\w)\1(\w)\2/gi;
+  4. 查找连续相同的四个数字或四个字符
+  reg = /(\w)\1\1\1/gi;
+  5. 查HTML标记，中间的内容
+  reg = /&lt;(\w+)&gt;.+&lt;\/\1&gt;/gi; //+,一个或多个
+</code></pre></div><blockquote><p>正则语法细节
+1. 普通字符: a,b,c,d 1234
+2. 特殊字符(元字符): \d\D\w,...
+- 需求分析
+1. 查什么
+2. 从哪查
+3. 查多少</p></blockquote> <ul><li><ol><li>限定符
+限定符可以指定正则表达式的一个给定组件必须要出现多少次才能才能满足匹配
+满 ;</li></ol></li></ul> <div class="language- extra-class"><pre><code>  * 0~n次 === {0,}
+  + 1~n次 === {1,}
+  ？0~1次 === {0,1}
+  {n} 匹配确定的n次
+  {n,} 至少匹配n次
+  {n,m} 最少匹配n次且最多匹配m次
+</code></pre></div><h3 id="代码"><a href="#代码" class="header-anchor">#</a> 代码</h3> <p>reg = /\d{3}/gi; //匹配三个数字
+reg = /\d{3,}/gi; //最少匹配三个数字
+reg = /\d{3,5}/gi; //最多匹配5个,那么在正则表达式中会自动匹配多的哪一种,这在正则中贪婪匹配原则；</p> <ol start="2"><li>字符串匹配符
+字符匹配符用于匹配某个或某些字符
+\D: 匹配一个非数字字符 [^0-9];
+\w: 匹配包括下划线的任何单词字符. [0-9a-zA-Z_]
+\W: 匹配任何非单词字符; [^\w]
+\s: 匹配任何空白字符; 空格、制表符、换行符
+\S: 匹配任何非空白字符;
+.: 匹配除&quot;\n&quot;之外的任何单个字符,如果想匹配任
+意字符[.\n]</li></ol> <blockquote><p>定位符</p></blockquote> <p>定位符可以将一个正则表达式固定在一行的开始或结束,也可以创建只在单词内或只在单词的考试或结尾处出现的正则表达式</p> <p>^ : 匹配输入字符串的开始位置
+$ : 匹配输入字符串的结束位置
+\b: 匹配一个单词的边界
+\B: 匹配非单词边界</p> <blockquote><p>关于正则表达式的几种特殊用法</p></blockquote> <ol><li>(?=)
+正向预查</li></ol> <ul><li>查 '好人'前面的名字
+var str = '张三超好人,张三超大侠';
+reg = /张三超(?=好人)/gi; //输出 '张三超'</li></ul> <ol start="2"><li>(?!)
+负向预查</li></ol> <ul><li>查不是'好人'前面的名字
+var str = '张三超好人,张三超大侠';
+reg = /张三超(?！好人)/gi; //输出 '张三超',RegExp.lastIndex</li></ul> <ol start="3"><li>(?😃
+结果不被捕获</li></ol> <div class="language-c extra-class"><pre class="language-c"><code>var str <span class="token operator">=</span> <span class="token string">'hellojavascript.hellophp.hellojava.helloajax'</span><span class="token punctuation">;</span>
+var reg <span class="token operator">=</span> <span class="token operator">/</span><span class="token function">hello</span><span class="token punctuation">(</span><span class="token operator">?</span><span class="token operator">:</span>javascript<span class="token operator">|</span>php<span class="token punctuation">)</span><span class="token operator">/</span>gi<span class="token punctuation">;</span>
+var result<span class="token punctuation">;</span>
+<span class="token keyword">while</span><span class="token punctuation">(</span>result <span class="token operator">=</span> reg<span class="token punctuation">.</span><span class="token function">exex</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">alert</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>(javascript|php)会被当做子表达式来处理，内容会被捕获,但在程序中,捕获的内容没有任何用途,这种情况下，,可以
+使用(?😃,让系统不去捕获子表达式匹配的内容;</p> <blockquote><p>DucumentFragment: 文档碎片(高效批量更新多个节点)</p></blockquote> <ol><li>document: 对应显示的页面,包含n个elment, 一旦更新document内部的某个元素，界面更新</li> <li>documentFragment: 内存中保存n个element的容器对象(不与界面关联),如果更新fragment中的某个element,界面不变</li></ol> <blockquote><p>发布者-订阅者模式（backbone.js）
+脏值检查（angular.js）
+数据劫持（vue.js）</p></blockquote> <blockquote><p>dom.nodeType == 1,为元素节点</p></blockquote> <blockquote><p>JS中的全局作用域下的变量提升只是针对变量,全局变量未声明的
+比如<code>a = 2</code>,在这之前调用a会报错ReferenceError;
+函数的执行会形成私有作用域,私有作用域进入</p></blockquote> <ul><li>先判断有无形参复制</li> <li>变量提升</li> <li>不管条件是否成立,都要进行变量提升,新浏览器中对于判断体中只是提前声明;</li></ul> <div class="language- extra-class"><pre><code>```c
+/*
+* 变量提升 var foo;
+*/
+var foo =1;
+function bar() { //私有作用域
+  if(!foo){ //=&gt; !undefined
+  var foo = 10;
+ }
+ console.log(foo);
+}
+bar();
+```
+</code></pre></div><blockquote><p>ES6 let 没有变量提升</p></blockquote> <blockquote><p>javascript中的with语法</p></blockquote> <div class="language-c extra-class"><pre class="language-c"><code>function <span class="token function">foo</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    with <span class="token punctuation">(</span>obj<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        a <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+var o1 <span class="token operator">=</span> <span class="token punctuation">{</span>
+    a<span class="token operator">:</span> <span class="token number">3</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+var o2 <span class="token operator">=</span> <span class="token punctuation">{</span>
+    b<span class="token operator">:</span> <span class="token number">3</span>
+<span class="token punctuation">}</span>
+<span class="token function">foo</span><span class="token punctuation">(</span>o1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>o1<span class="token punctuation">.</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//2</span>
+
+<span class="token function">foo</span><span class="token punctuation">(</span>o2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>o2<span class="token punctuation">.</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//underfined</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>     <span class="token comment">//不好，a被泄漏到全局作用域上了</span>
+</code></pre></div><ol><li>with 所声明的作用域是 o2, 从这个作用域开始对 a 进行 LHS查询。o2 的作用域、foo(…) 的作用域和全局作用域中都没有找到标识符 a，因此在非严格模式下，会自动在全局作用域创建一个全局变量），在严格模式下，会抛出ReferenceError 异常。</li> <li>(with和eval性能下降)JavaScript 引擎会在编译阶段进行数项的性能优化。
+其中有些优化依赖于能够根据代码的词法进行静态分析，并预先确定所有变量和函数的定义位置，才能在执行过程中快速找到标识符。
+  但如果引擎在代码中发现了 with，它只能简单地假设关于标识符位置的判断都是无效的，因为无法知道传递给 with 用来创建新词法作用域的对象的内容到底是什么。
+  最悲观的情况是如果出现了 with ，所有的优化都可能是无意义的。因此引擎会采取最简单的做法就是完全不做任何优化。如果代码大量使用 with 或者 eval()，那么运行起来一定会变得非常慢。无论引擎多聪明，试图将这些悲观情况的副作用限制在最小范围内，也无法避免如果没有这些优化，代码会运行得更慢的事实。</li></ol> <blockquote><p>函数提升要比变量提升的优先级要高一些，且<strong>不会被变量声明覆盖</strong>，但是会被<strong>变量赋值之后覆盖</strong></p></blockquote> <div class="language-c extra-class"><pre class="language-c"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// f a() {console.log(10)}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">//  undefined,函数a执行未返回任何数据为undefined,同时执行a函数中的console.log(10)</span>
+var a <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+
+function <span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span> <span class="token comment">//10</span>
+<span class="token punctuation">}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>   <span class="token comment">//3</span>
+a <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//a is not a function;</span>
+</code></pre></div><div class="language-c extra-class"><pre class="language-c"><code>原理
+ var a <span class="token operator">=</span> funtion <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span>
+ <span class="token punctuation">}</span>
+ var a<span class="token punctuation">;</span>
+ console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// f a() {console.log(10)}</span>
+ console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//  undefined</span>
+
+ a <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+ console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>   <span class="token comment">//3</span>
+ a <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span>
+ console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">//a() is not a function;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/all/javascript/2018-11-21-Module.html" class="prev">
+        javascript模块化
+      </a></span> <span class="next"><a href="/all/javascript/2018-12-11-syntaxBase2.html">
+        javascript的syntax基础2
+      </a>
+      →
+    </span></p></div> </main></div> <div class="footer" data-v-35b17a59><div id="footer-info" data-v-35b17a59><div class="footer-left" data-v-35b17a59>
+      © 2019-2020
+      <span data-v-35b17a59><a href="https://sunny2009day.github.io/" target="_blank">积极向上</a></span></div> <div class="footer-right" data-v-35b17a59>Theme:<a href="https://github.com/JoeyBling/vuepress-theme-yilia-plus" target="_blank">vuepress-theme-yilia-plus</a> by Litten</div></div> <div class="busuanzi" data-v-35b17a59><span id="busuanzi_container_site_pv" style="display:none">
+    本站总访问量
+    <span id="busuanzi_value_site_pv"></span>次
+    <span class="post-meta-divider">|</span></span> <span id="busuanzi_container_site_uv" style="display:none">
+    本站访客数
+    <span id="busuanzi_value_site_uv"></span>人
+  </span></div></div></main><div class="global-ui"><!----><div></div></div></div>
+    <script src="/assets/js/app.e473c4b1.js" defer></script><script src="/assets/js/2.a1a30593.js" defer></script><script src="/assets/js/36.869de2d9.js" defer></script>
+  </body>
+</html>
